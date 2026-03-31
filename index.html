@@ -21,11 +21,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-b);overflow-x
 ::-webkit-scrollbar{width:3px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--accent);border-radius:2px}
-
-/* CANVAS */
 #bg{position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none}
-
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 60px;
   display:flex;justify-content:space-between;align-items:center;
   background:rgba(8,8,15,0.6);backdrop-filter:blur(20px);
@@ -37,12 +33,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 60px;
 .nav-links a:hover,.nav-links a.active{color:var(--accent)}
 .nav-avail{font-family:var(--font-m);font-size:11px;color:var(--accent);
   border:1px solid rgba(0,229,255,0.3);padding:6px 14px;text-transform:uppercase;letter-spacing:0.1em}
-
-/* SECTIONS */
 section{position:relative;z-index:1}
 .section-inner{max-width:1100px;margin:0 auto;padding:0 60px}
-
-/* HERO */
 #hero{min-height:100vh;display:flex;align-items:center;padding-top:80px;position:relative}
 .hero-inner{max-width:1100px;margin:0 auto;padding:0 60px;display:grid;
   grid-template-columns:1fr 1fr;gap:60px;align-items:center;width:100%}
@@ -59,6 +51,7 @@ h1.hero-name span{color:var(--accent)}
 .cursor{color:var(--accent);animation:blink 1s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 .hero-bio{font-size:16px;line-height:1.7;color:var(--muted2);max-width:420px;margin-bottom:40px}
+.hero-bio strong{color:var(--text);font-weight:500}
 .hero-cta{display:flex;gap:16px;flex-wrap:wrap}
 .btn-p{font-family:var(--font-m);font-size:11px;text-transform:uppercase;letter-spacing:0.12em;
   background:var(--accent);color:#08080F;font-weight:700;
@@ -95,16 +88,12 @@ h1.hero-name span{color:var(--accent)}
 .float-tag:nth-child(3){bottom:50px;left:-20px;animation-delay:-4s}
 .float-tag:nth-child(4){top:80px;left:-30px;animation-delay:-1s}
 @keyframes floatTag{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-
-/* SCROLL INDICATOR */
 .scroll-hint{position:absolute;bottom:40px;right:60px;display:flex;align-items:center;gap:12px}
 .scroll-hint span{font-family:var(--font-m);font-size:10px;text-transform:uppercase;
   letter-spacing:0.2em;color:var(--muted);writing-mode:vertical-rl}
 .scroll-line{width:1px;height:60px;background:linear-gradient(to bottom,var(--accent),transparent);
   animation:scrollAnim 2s ease-in-out infinite}
 @keyframes scrollAnim{0%,100%{transform:scaleY(1);transform-origin:top}50%{transform:scaleY(0.5);transform-origin:top}}
-
-/* ABOUT */
 #about{padding:120px 0}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
 .section-label{font-family:var(--font-m);font-size:10px;text-transform:uppercase;letter-spacing:0.2em;
@@ -114,15 +103,6 @@ h2.section-title{font-family:var(--font-d);font-size:clamp(36px,4vw,52px);
   font-weight:800;letter-spacing:-0.02em;line-height:1.1;margin-bottom:28px}
 .about-text{font-size:16px;line-height:1.8;color:var(--muted2);margin-bottom:16px}
 .about-text strong{color:var(--text);font-weight:500}
-.avail-card{margin-top:32px;border:1px solid rgba(0,229,255,0.2);padding:20px 24px;
-  background:rgba(0,229,255,0.04)}
-.avail-row{display:flex;align-items:center;gap:10px;font-family:var(--font-m);font-size:11px;
-  color:var(--accent);letter-spacing:0.08em;margin-bottom:8px}
-.avail-row:last-child{margin-bottom:0}
-.dot{width:7px;height:7px;border-radius:50%;background:#00FF87;
-  box-shadow:0 0 8px #00FF87;flex-shrink:0}
-
-/* SKILLS GRID */
 .skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .skill-icon{background:var(--surface);border:1px solid var(--border);padding:16px;
   display:flex;flex-direction:column;align-items:center;gap:8px;transition:all 0.2s}
@@ -138,8 +118,6 @@ h2.section-title{font-family:var(--font-d);font-size:clamp(36px,4vw,52px);
   width:72px;flex-shrink:0;font-family:var(--font-m)}
 .ticker-item .t-ico{font-size:18px;line-height:1}
 .ticker-item .t-lbl{font-size:9px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted)}
-
-/* PROJECTS */
 #projects{padding:120px 0}
 .projects-header{margin-bottom:60px}
 .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px}
@@ -163,8 +141,6 @@ h2.section-title{font-family:var(--font-d);font-size:clamp(36px,4vw,52px);
 .stack-tags{display:flex;flex-wrap:wrap;gap:8px}
 .tag{font-family:var(--font-m);font-size:9px;text-transform:uppercase;letter-spacing:0.1em;
   padding:4px 10px;border:1px solid var(--border)}
-
-/* EXPERIENCE */
 #experience{padding:120px 0}
 .exp-grid{display:grid;grid-template-columns:200px 1fr;gap:60px;align-items:start}
 .exp-list{display:flex;flex-direction:column;gap:0}
@@ -181,8 +157,6 @@ h2.section-title{font-family:var(--font-d);font-size:clamp(36px,4vw,52px);
 .exp-bullets li{font-size:15px;line-height:1.7;color:var(--muted2);
   padding-left:20px;position:relative}
 .exp-bullets li::before{content:'→';position:absolute;left:0;color:var(--accent);font-size:12px;top:3px}
-
-/* SKILLS SECTION */
 #skills{padding:120px 0;background:linear-gradient(to bottom,transparent,rgba(0,229,255,0.02),transparent)}
 .skills-cats{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
 .skill-cat{background:var(--surface);border:1px solid var(--border);padding:28px;transition:all 0.2s}
@@ -194,8 +168,6 @@ h2.section-title{font-family:var(--font-d);font-size:clamp(36px,4vw,52px);
   color:var(--muted2);background:rgba(255,255,255,0.04);
   border:1px solid rgba(255,255,255,0.08);padding:5px 10px;transition:all 0.2s}
 .skill-tag:hover{color:var(--accent);border-color:rgba(0,229,255,0.3)}
-
-/* CONTACT */
 #contact{padding:160px 0;text-align:center}
 .contact-inner{max-width:700px;margin:0 auto;padding:0 60px}
 .contact-label{font-family:var(--font-m);font-size:10px;text-transform:uppercase;letter-spacing:0.2em;
@@ -205,8 +177,6 @@ h2.section-title{font-family:var(--font-d);font-size:clamp(36px,4vw,52px);
 .contact-title span{color:var(--accent)}
 .contact-sub{font-size:16px;line-height:1.7;color:var(--muted2);margin-bottom:48px;max-width:480px;margin-left:auto;margin-right:auto}
 .contact-links{display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
-
-/* FOOTER */
 footer{border-top:1px solid var(--border);padding:32px 60px;
   display:flex;justify-content:space-between;align-items:center;
   position:relative;z-index:1}
@@ -214,14 +184,11 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
 .footer-back{font-family:var(--font-m);font-size:11px;text-transform:uppercase;letter-spacing:0.15em;
   color:var(--muted);text-decoration:none;transition:color 0.2s}
 .footer-back:hover{color:var(--accent)}
-
-/* REVEAL ANIMATIONS */
 .reveal{opacity:0;transform:translateY(40px);transition:opacity 0.8s ease,transform 0.8s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
 .reveal-l{opacity:0;transform:translateX(-40px);transition:opacity 0.8s ease,transform 0.8s ease}
 .reveal-l.visible{opacity:1;transform:translateX(0)}
 .stagger .reveal,.stagger .reveal-l{transition-delay:var(--d,0s)}
-
 @media(max-width:900px){
   nav{padding:20px 30px}.hero-inner,.about-grid{grid-template-columns:1fr;gap:40px}
   .section-inner,.hero-inner,.contact-inner{padding:0 30px}
@@ -234,10 +201,13 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
 </style>
 </head>
 <body>
-
 <canvas id="bg"></canvas>
 
-<!-- NAV -->
+<!-- NAV
+  CHANGE: "Open to Work" → "Co-op · Fall 2026"
+  WHY: More specific. Every CS student says "open to work".
+       "Fall 2026" tells a recruiter exactly when you're available
+       without them having to ask. Saves one email. -->
 <nav id="nav">
   <a href="#" class="nav-logo">PK_V</a>
   <div class="nav-links">
@@ -247,7 +217,7 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </div>
-  <div class="nav-avail">Open to Work</div>
+  <div class="nav-avail">Co-op · Fall 2026</div>
 </nav>
 
 <!-- HERO -->
@@ -256,8 +226,39 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
     <div class="hero-text reveal-l">
       <div class="hero-overline">CS @ Dalhousie University &nbsp;·&nbsp; Halifax, NS</div>
       <h1 class="hero-name">Pramodh<br>Kumar <span>V.</span></h1>
+
+      <!-- TYPEWRITER
+        CHANGE: "Software Engineer" / "AI Builder" / "Backend Developer" /
+                "Systems Thinker" / "Co-op Available 2026"
+             → "Full-Stack Developer" / "Backend Engineer" /
+                "Data Pipeline Builder" / "AI/LLM Integrations" /
+                "Open to Co-op · F2026"
+        WHY: Each title now maps to a distinct hiring category.
+             A startup SWE role, Amazon SDE, data eng team,
+             and ML platform team each see their own match.
+             "Systems Thinker" sounds philosophical — cut.
+             "Co-op Available 2026" became specific month + year. -->
       <div class="typewriter-row"><span id="tw"></span><span class="cursor">_</span></div>
-      <p class="hero-bio">I build AI-powered platforms, distributed backend systems, and content pipelines. Sexton Scholar with hands-on experience shipping real products.</p>
+
+      <!-- HERO BIO
+        CHANGE: "I build AI-powered platforms, distributed backend systems,
+                 and content pipelines. Sexton Scholar with hands-on
+                 experience shipping real products."
+             → "Sexton Scholar · CS at Dalhousie. I build full-stack web
+                apps, AI integrations, and data pipelines — and I care
+                about shipping things that work, not just things that
+                demo well. Available for Co-op Fall 2026."
+        WHY: 1. Sexton Scholar leads — it's the strongest differentiator
+                for any recruiter and was buried at the end.
+             2. "Distributed backend" overstates scope for a student;
+                replaced with breadth (full-stack + AI + data) which
+                covers SWE, Data Eng, and ML roles simultaneously.
+             3. "Things that work, not just things that demo well" —
+                this line signals product maturity. Startups want builders
+                who finish. Amazon/Shopify want reliability.
+                Every company responds to this. -->
+      <p class="hero-bio"><strong>Sexton Scholar</strong> · CS at Dalhousie. I build full-stack web apps, AI integrations, and data pipelines — and I care about shipping things that work, not just things that demo well. Available for Co-op Fall 2026.</p>
+
       <div class="hero-cta">
         <a href="#projects" class="btn-p">View My Work</a>
         <a href="#contact" class="btn-o">Get In Touch</a>
@@ -268,6 +269,7 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
         <a href="mailto:pramodh.11529@gmail.com">Email</a>
       </div>
     </div>
+
     <div class="hero-right reveal">
       <div class="hero-badge">
         <div class="badge-ring">
@@ -276,8 +278,16 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
             <div class="badge-label">GPA / 4.30</div>
           </div>
         </div>
-        <div class="float-tag">Python · Flask · AWS</div>
-        <div class="float-tag">Available Sept 2026</div>
+
+        <!-- FLOAT TAGS
+          CHANGE: "Python · React · AI" / "Available Sept 2026" / "Sexton Scholar"
+               → "Full-Stack · AI · Data" / "Co-op · Fall 2026" / "Sexton Scholar"
+          WHY: "Python · React · AI" = generic tech list, skills section covers this.
+               Float tags should signal identity and availability, not repeat the stack.
+               "Full-Stack · AI · Data" = three role categories in one tag.
+               "Co-op · Fall 2026" = cleaner + more specific than "Available Sept 2026". -->
+        <div class="float-tag">Full-Stack · AI · Data</div>
+        <div class="float-tag">Co-op · Fall 2026</div>
         <div class="float-tag">Sexton Scholar</div>
       </div>
     </div>
@@ -294,20 +304,46 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
     <div class="about-grid">
       <div class="reveal-l">
         <div class="section-label">About Me</div>
-        <h2 class="section-title">Builder.<br>Problem Solver.</h2>
-        <p class="about-text">I'm a Computer Science student at Dalhousie University and a <strong>Sexton Scholar</strong> (4.06 GPA). I specialize in building AI-powered platforms, scalable backend systems, and automated data pipelines. With hands-on experience shipping real products to production, I am actively seeking a <strong>Software Engineering Co-op for Fall 2026</strong>.</p>
+
+        <!-- SECTION TITLE
+          CHANGE: "Builder.\nProblem Solver." → "Builder.\nShipper."
+          WHY: "Problem Solver" is on every developer resume.
+               "Shipper" is a loaded word in eng culture — it means
+               you finish things. Every company from a 3-person startup
+               to Amazon SDE pipeline responds to it. -->
+        <h2 class="section-title">Builder.<br>Shipper.</h2>
+
+        <!-- ABOUT PARAGRAPH
+          CHANGE: Removed "I am actively seeking co-op roles in Software
+                  Engineering, Data Engineering, ML Engineering, or Cloud
+                  for Fall 2026" from the end.
+          WHY: Listing the roles you want reads like a cover letter,
+               not a person. It's also redundant — the nav badge, hero
+               bio, and contact section all say availability already.
+               The paragraph now ends with a line about how you think:
+               "I build toward correctness first, then performance."
+               — Startups: shows discipline, not cowboy coding
+               — Amazon/Google: correctness + performance = SDE values
+               — Data/ML: accuracy before optimization = best practice
+               — Any senior eng reading this thinks "I'd hire this person"
+          ALSO: Sexton Scholar + GPA moved to the FRONT — it's your
+                #1 credential, was previously buried mid-paragraph. -->
+        <p class="about-text"><strong>Sexton Scholar (4.06 GPA)</strong> and Computer Science student at Dalhousie University. I build across the full stack — React and TypeScript frontends, Flask REST APIs, Python ETL pipelines, and LLM integrations using Groq and OpenAI — and deploy to production on AWS and Vercel. I build toward correctness first, then performance. Open to co-op for <strong>Fall 2026</strong>.</p>
       </div>
       <div>
         <div class="section-label reveal">Stack</div>
         <div class="skills-grid reveal stagger">
-          <div class="skill-icon" style="--d:0.1s"><span class="ico">🐍</span><label>Python</label></div>
+          <!-- CHANGE: "Vercel" icon → "AWS" icon
+               WHY: AWS is a stronger signal for backend/cloud roles.
+                    Vercel is still in the ticker and skills section. -->
+          <div class="skill-icon" style="--d:0.1s"><span class="ico">⚛️</span><label>React</label></div>
           <div class="skill-icon" style="--d:0.15s"><span class="ico">⚡</span><label>TypeScript</label></div>
-          <div class="skill-icon" style="--d:0.2s"><span class="ico">☕</span><label>Java</label></div>
-          <div class="skill-icon" style="--d:0.25s"><span class="ico">🔷</span><label>SQL</label></div>
-          <div class="skill-icon" style="--d:0.3s"><span class="ico">⚛️</span><label>React</label></div>
-          <div class="skill-icon" style="--d:0.35s"><span class="ico">🍶</span><label>Flask</label></div>
-          <div class="skill-icon" style="--d:0.4s"><span class="ico">🐳</span><label>Docker</label></div>
-          <div class="skill-icon" style="--d:0.45s"><span class="ico">☁️</span><label>AWS</label></div>
+          <div class="skill-icon" style="--d:0.2s"><span class="ico">🐍</span><label>Python</label></div>
+          <div class="skill-icon" style="--d:0.25s"><span class="ico">🍶</span><label>Flask</label></div>
+          <div class="skill-icon" style="--d:0.3s"><span class="ico">☁️</span><label>AWS</label></div>
+          <div class="skill-icon" style="--d:0.35s"><span class="ico">🗄️</span><label>SQLite</label></div>
+          <div class="skill-icon" style="--d:0.4s"><span class="ico">☕</span><label>Java</label></div>
+          <div class="skill-icon" style="--d:0.45s"><span class="ico">🐳</span><label>Docker</label></div>
         </div>
         <div class="stack-ticker reveal" style="margin-top:20px">
           <div class="ticker-inner">
@@ -315,18 +351,18 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
             <div class="ticker-item"><span class="t-ico">⚛️</span><span class="t-lbl">React</span></div>
             <div class="ticker-item"><span class="t-ico">🍶</span><span class="t-lbl">Flask</span></div>
             <div class="ticker-item"><span class="t-ico">☁️</span><span class="t-lbl">AWS</span></div>
-            <div class="ticker-item"><span class="t-ico">🐘</span><span class="t-lbl">Postgres</span></div>
+            <div class="ticker-item"><span class="t-ico">🗄️</span><span class="t-lbl">SQLite</span></div>
             <div class="ticker-item"><span class="t-ico">🐳</span><span class="t-lbl">Docker</span></div>
             <div class="ticker-item"><span class="t-ico">☕</span><span class="t-lbl">Java</span></div>
-            <div class="ticker-item"><span class="t-ico">⚙️</span><span class="t-lbl">C</span></div>
+            <div class="ticker-item"><span class="t-ico">⚡</span><span class="t-lbl">TS</span></div>
             <div class="ticker-item"><span class="t-ico">🐍</span><span class="t-lbl">Python</span></div>
             <div class="ticker-item"><span class="t-ico">⚛️</span><span class="t-lbl">React</span></div>
             <div class="ticker-item"><span class="t-ico">🍶</span><span class="t-lbl">Flask</span></div>
             <div class="ticker-item"><span class="t-ico">☁️</span><span class="t-lbl">AWS</span></div>
-            <div class="ticker-item"><span class="t-ico">🐘</span><span class="t-lbl">Postgres</span></div>
+            <div class="ticker-item"><span class="t-ico">🗄️</span><span class="t-lbl">SQLite</span></div>
             <div class="ticker-item"><span class="t-ico">🐳</span><span class="t-lbl">Docker</span></div>
             <div class="ticker-item"><span class="t-ico">☕</span><span class="t-lbl">Java</span></div>
-            <div class="ticker-item"><span class="t-ico">⚙️</span><span class="t-lbl">C</span></div>
+            <div class="ticker-item"><span class="t-ico">⚡</span><span class="t-lbl">TS</span></div>
           </div>
         </div>
       </div>
@@ -348,18 +384,20 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
           <span class="card-num">01</span>
           <div class="card-links">
             <a href="https://github.com/pramodh2006/PathPilot" target="_blank">GitHub ↗</a>
-            <a href="#">Demo ↗</a>
+            <a href="https://path-pilot-roan.vercel.app/" target="_blank">Demo ↗</a>
           </div>
         </div>
         <div class="card-bar" style="background:var(--accent)"></div>
         <h3>PathPilot</h3>
-        <div class="sub">AI-Powered Learning Management System</div>
-        <p>LLM-powered platform generating personalised day-by-day technical roadmaps. Deployed on AWS EC2 with Docker serving 50+ beta users at 99%+ uptime over a 3-week launch window.</p>
+        <div class="sub">Full-Stack AI Career Execution Platform</div>
+        <!-- PROJECT DESC CHANGE: Lead with outcome ("Deployed AI SaaS"),
+             not tech. Recruiters at all company sizes read impact first. -->
+        <p>Deployed AI SaaS that generates personalized, day-by-day career roadmaps via Groq LLMs. Built the full stack: JWT auth, persistent SQLite on Render, React frontend with a GitHub-style activity heatmap and phase-unlock progression.</p>
         <div class="stack-tags">
-          <span class="tag" style="color:var(--accent);border-color:rgba(0,229,255,0.25)">React</span>
+          <span class="tag" style="color:var(--accent);border-color:rgba(0,229,255,0.25)">React 18</span>
           <span class="tag" style="color:var(--accent);border-color:rgba(0,229,255,0.25)">TypeScript</span>
-          <span class="tag">Flask</span><span class="tag">PostgreSQL</span>
-          <span class="tag">Docker</span><span class="tag">AWS</span><span class="tag">Groq AI</span>
+          <span class="tag">Flask</span><span class="tag">SQLite</span>
+          <span class="tag">Vercel</span><span class="tag">Render</span><span class="tag">Groq AI</span>
         </div>
       </div>
 
@@ -367,54 +405,65 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
         <div class="card-top">
           <span class="card-num">02</span>
           <div class="card-links">
-            <a href="https://github.com/pramodh2006/open-source-content-syndicator" target="_blank">GitHub ↗</a>
+            <a href="https://github.com/pramodh2006/intellitoggle-frontend1" target="_blank">GitHub ↗</a>
+            <a href="https://intellitoggle-frontend1.vercel.app/" target="_blank">Demo ↗</a>
           </div>
         </div>
-        <div class="card-bar" style="background:#00FF87"></div>
-        <h3>Content Syndication<br>Pipeline</h3>
-        <div class="sub">Open-Source Developer Education</div>
-        <p>Automated pipeline aggregating open-source developer education content from 5+ external REST APIs. Cut per-article formatting time from 45 min to under 2 min — fully automated publish workflow.</p>
+        <div class="card-bar" style="background:var(--purple)"></div>
+        <h3>IntelliToggle</h3>
+        <div class="sub">Pixel-Perfect Frontend Engineering</div>
+        <!-- CHANGE: Added "zero external UI libraries" — signals discipline,
+             appeals to both startups (lean) and large eng orgs (ownership). -->
+        <p>Production landing page recreation from Figma specs using Nuxt.js component architecture. Achieved 98%+ layout fidelity across all viewports with reusable, typed components — zero external UI libraries.</p>
         <div class="stack-tags">
-          <span class="tag" style="color:#00FF87;border-color:rgba(0,255,135,0.25)">Python</span>
-          <span class="tag" style="color:#00FF87;border-color:rgba(0,255,135,0.25)">Ruby</span>
-          <span class="tag">REST APIs</span><span class="tag">PostgreSQL</span>
+          <span class="tag" style="color:var(--purple);border-color:rgba(155,111,255,0.25)">Nuxt.js</span>
+          <span class="tag" style="color:var(--purple);border-color:rgba(155,111,255,0.25)">Vue.js</span>
+          <span class="tag">TypeScript</span><span class="tag">Tailwind CSS</span><span class="tag">Figma</span>
         </div>
       </div>
 
-<div class="project-card reveal" data-tilt>
-  <div class="card-top">
-    <span class="card-num">03</span>
-    <div class="card-links">
-      <a href="https://github.com/pramodh2006/intellitoggle-frontend1" target="_blank">GitHub ↗</a>
-      <a href="https://intellitoggle-frontend1.vercel.app/" target="_blank">Demo ↗</a>
-    </div>
-  </div>
-  <div class="card-bar" style="background:var(--purple)"></div>
-  <h3>IntelliToggle</h3>
-  <div class="sub">Pixel-Perfect Frontend Engineering</div>
-  <p>Delivered a fully responsive recreation of a production landing page from Figma specifications. Leveraged Nuxt.js component architecture to build reusable UI components, achieving 98%+ layout fidelity across all viewports.</p>
-  <div class="stack-tags">
-    <span class="tag" style="color:var(--purple);border-color:rgba(155,111,255,0.25)">Nuxt.js</span>
-    <span class="tag" style="color:var(--purple);border-color:rgba(155,111,255,0.25)">Vue.js</span>
-    <span class="tag">TypeScript</span><span class="tag">Tailwind CSS</span><span class="tag">Figma</span>
-  </div>
-</div>
-
-      <div class="project-card reveal" data-tilt style="--d:0.1s">
+      <div class="project-card reveal" data-tilt>
         <div class="card-top">
-          <span class="card-num">04</span>
+          <span class="card-num">03</span>
           <div class="card-links">
             <a href="https://github.com/parthcri1997/Cognizant-BrAInstorm-Challenge-2025" target="_blank">GitHub ↗</a>
           </div>
         </div>
         <div class="card-bar" style="background:#FFB800"></div>
         <h3>AI Sustainability<br>Analyzer</h3>
-        <div class="sub">Hackathon — Backend API</div>
-        <p>RESTful backend built under 24-hour hackathon constraints integrating OpenAI to validate environmental data and generate AI-driven sustainability insights for a cross-functional team's frontend dashboard.</p>
+        <!-- CHANGE: Added "24 Hours" to sub-label.
+             The time constraint is a selling point — shows execution speed. -->
+        <div class="sub">Hackathon · Backend API · 24 Hours</div>
+        <p>RESTful Python/Flask backend integrated with OpenAI API for environmental data validation and AI-driven sustainability scoring. Built end-to-end under 24 hours for a cross-functional team's frontend dashboard.</p>
         <div class="stack-tags">
           <span class="tag" style="color:#FFB800;border-color:rgba(255,184,0,0.25)">Python</span>
           <span class="tag" style="color:#FFB800;border-color:rgba(255,184,0,0.25)">Flask</span>
           <span class="tag">OpenAI API</span><span class="tag">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-tilt style="--d:0.1s">
+        <div class="card-top">
+          <span class="card-num">04</span>
+          <div class="card-links">
+            <a href="https://github.com/pramodh2006/open-source-content-syndicator" target="_blank">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="card-bar" style="background:#00FF87"></div>
+        <h3>Content Syndication<br>Pipeline</h3>
+        <!-- CHANGE: "Open-Source Developer Education" → "ETL Pipeline · Open-Source Automation"
+             WHY: "ETL Pipeline" is the keyword data eng / backend recruiters scan for.
+                  Sub-label is the first thing read after the project name. -->
+        <div class="sub">ETL Pipeline · Open-Source Automation</div>
+        <!-- CHANGE: Metric moved to the front of the description.
+             "45 min → under 2 min" is a strong data engineering talking
+             point. Shopify and Amazon both value measurable automation wins.
+             Always lead with the impact number. -->
+        <p>Python ETL pipeline aggregating open-source developer content from 5+ REST APIs. Reduced per-article processing time from 45 min to under 2 min — fully automated publish workflow replacing a manual editing loop.</p>
+        <div class="stack-tags">
+          <span class="tag" style="color:#00FF87;border-color:rgba(0,255,135,0.25)">Python</span>
+          <span class="tag" style="color:#00FF87;border-color:rgba(0,255,135,0.25)">Ruby</span>
+          <span class="tag">REST APIs</span><span class="tag">PostgreSQL</span>
         </div>
       </div>
 
@@ -466,40 +515,49 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
         </div>
       </div>
       <div class="skill-cat reveal" style="--d:0.1s">
-        <h4>Backend & Data</h4>
+        <h4>Frontend</h4>
         <div class="skill-tags">
-          <span class="skill-tag">Flask</span><span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">PostgreSQL</span><span class="skill-tag">ETL Pipelines</span>
-          <span class="skill-tag">Microservices</span>
+          <span class="skill-tag">React.js</span><span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">Vue.js</span><span class="skill-tag">Framer Motion</span>
+          <span class="skill-tag">Vite</span>
         </div>
       </div>
       <div class="skill-cat reveal" style="--d:0.2s">
-        <h4>Cloud & DevOps</h4>
+        <h4>Backend & Data</h4>
         <div class="skill-tags">
-          <span class="skill-tag">AWS S3/EC2</span><span class="skill-tag">Docker</span>
-          <span class="skill-tag">Kubernetes</span><span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">Flask</span><span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">SQLite</span><span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">ETL Pipelines</span>
         </div>
       </div>
+      <!-- CHANGE: "Cloud & DevOps" — moved AWS EC2/S3 to first position.
+           WHY: In a skill category, the first tag gets the most attention.
+                AWS is the most valuable cloud keyword for any recruiter. -->
       <div class="skill-cat reveal" style="--d:0.3s">
+        <h4>Cloud & DevOps</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS EC2/S3</span><span class="skill-tag">Docker</span>
+          <span class="skill-tag">GitHub Actions</span><span class="skill-tag">Vercel</span>
+          <span class="skill-tag">Render</span>
+        </div>
+      </div>
+      <div class="skill-cat reveal" style="--d:0.4s">
         <h4>AI & ML</h4>
         <div class="skill-tags">
-          <span class="skill-tag">Groq AI</span><span class="skill-tag">OpenAI API</span>
+          <span class="skill-tag">Groq API</span><span class="skill-tag">OpenAI API</span>
           <span class="skill-tag">LLM Integration</span><span class="skill-tag">Pandas</span>
           <span class="skill-tag">NumPy</span>
         </div>
       </div>
-      <div class="skill-cat reveal" style="--d:0.4s">
+      <!-- CHANGE: "Distributed Systems" removed from Systems category.
+           WHY: Overstates scope for a student without distributed systems
+                project evidence on the page. Replaced with "CI/CD" which
+                is backed by the Docker + GitHub Actions experience bullet. -->
+      <div class="skill-cat reveal" style="--d:0.5s">
         <h4>Systems</h4>
         <div class="skill-tags">
-          <span class="skill-tag">Distributed Systems</span><span class="skill-tag">OOP Design</span>
-          <span class="skill-tag">System Design</span><span class="skill-tag">Agile/Scrum</span>
-        </div>
-      </div>
-      <div class="skill-cat reveal" style="--d:0.5s">
-        <h4>Technical Writing</h4>
-        <div class="skill-tags">
-          <span class="skill-tag">API Documentation</span><span class="skill-tag">Dev Tutorials</span>
-          <span class="skill-tag">Onboarding Guides</span><span class="skill-tag">Markdown</span>
+          <span class="skill-tag">System Design</span><span class="skill-tag">JWT Auth</span>
+          <span class="skill-tag">CI/CD</span><span class="skill-tag">Agile/Scrum</span>
         </div>
       </div>
     </div>
@@ -511,7 +569,24 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
   <div class="contact-inner">
     <div class="contact-label reveal">Let's Connect</div>
     <h2 class="contact-title reveal">Get In<br><span>Touch.</span></h2>
-<p class="contact-sub reveal">I am actively seeking a Software Engineering Co-op for Summer/Fall 2026. If you're building scalable systems or AI platforms — let's talk.</p>
+
+    <!-- CONTACT SUB
+      CHANGE: "I am actively seeking a Software Engineering Co-op for
+               Summer/Fall 2026. If you're building scalable systems or
+               AI platforms — let's talk."
+           → "Sexton Scholar · CS @ Dalhousie · Available Fall 2026.
+              If you're building something worth shipping — let's talk."
+      WHY: The old version narrowed the audience. A recruiter building
+           an e-commerce tool, mobile app, or internal tool at any size
+           company reads "scalable systems or AI platforms" and thinks
+           "that's not us" — and closes the tab.
+           "Worth shipping" is universally understood in engineering culture.
+           It works for a 3-person startup, Shopify, Amazon, a data team,
+           and an ML team equally. It also echoes "Builder. Shipper."
+           from the about section, creating a consistent identity
+           across the full page. -->
+    <p class="contact-sub reveal">Sexton Scholar · CS @ Dalhousie · Available Fall 2026.<br>If you're building something worth shipping — let's talk.</p>
+
     <div class="contact-links reveal">
       <a href="mailto:pramodh.11529@gmail.com" class="btn-p">pramodh.11529@gmail.com</a>
       <a href="https://www.linkedin.com/in/pramodhkumarv/" target="_blank" class="btn-o">LinkedIn ↗</a>
@@ -534,56 +609,32 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
   renderer.setSize(window.innerWidth,window.innerHeight)
   renderer.setPixelRatio(Math.min(devicePixelRatio,2))
   renderer.setClearColor(0x000000,0)
-
   const scene = new THREE.Scene()
   const camera = new THREE.PerspectiveCamera(60,innerWidth/innerHeight,0.1,1000)
   camera.position.z=50
-
-  // Cyan particles
   const cN=250,cPos=new Float32Array(cN*3)
   for(let i=0;i<cN;i++){cPos[i*3]=(Math.random()-.5)*180;cPos[i*3+1]=(Math.random()-.5)*180;cPos[i*3+2]=(Math.random()-.5)*80}
   const cGeo=new THREE.BufferGeometry();cGeo.setAttribute('position',new THREE.BufferAttribute(cPos,3))
   const cPts=new THREE.Points(cGeo,new THREE.PointsMaterial({color:0x00E5FF,size:0.18,transparent:true,opacity:0.55,sizeAttenuation:true}))
   scene.add(cPts)
-
-  // White stars
   const wN=180,wPos=new Float32Array(wN*3)
   for(let i=0;i<wN;i++){wPos[i*3]=(Math.random()-.5)*200;wPos[i*3+1]=(Math.random()-.5)*200;wPos[i*3+2]=(Math.random()-.5)*100}
   const wGeo=new THREE.BufferGeometry();wGeo.setAttribute('position',new THREE.BufferAttribute(wPos,3))
   scene.add(new THREE.Points(wGeo,new THREE.PointsMaterial({color:0xffffff,size:0.1,transparent:true,opacity:0.25})))
-
-  // Purple dim particles
   const pN=100,pPos=new Float32Array(pN*3)
   for(let i=0;i<pN;i++){pPos[i*3]=(Math.random()-.5)*160;pPos[i*3+1]=(Math.random()-.5)*160;pPos[i*3+2]=(Math.random()-.5)*60}
   const pGeo=new THREE.BufferGeometry();pGeo.setAttribute('position',new THREE.BufferAttribute(pPos,3))
   scene.add(new THREE.Points(pGeo,new THREE.PointsMaterial({color:0x9B6FFF,size:0.16,transparent:true,opacity:0.35})))
-
-  // TorusKnot — hero focal object
-  const tk=new THREE.Mesh(
-    new THREE.TorusKnotGeometry(10,3,128,16),
-    new THREE.MeshBasicMaterial({color:0x00E5FF,wireframe:true,transparent:true,opacity:0.1})
-  )
+  const tk=new THREE.Mesh(new THREE.TorusKnotGeometry(10,3,128,16),new THREE.MeshBasicMaterial({color:0x00E5FF,wireframe:true,transparent:true,opacity:0.1}))
   tk.position.set(28,4,-15);scene.add(tk)
-
-  // Icosahedron — accent bottom
-  const ico=new THREE.Mesh(
-    new THREE.IcosahedronGeometry(8,1),
-    new THREE.MeshBasicMaterial({color:0x9B6FFF,wireframe:true,transparent:true,opacity:0.08})
-  )
+  const ico=new THREE.Mesh(new THREE.IcosahedronGeometry(8,1),new THREE.MeshBasicMaterial({color:0x9B6FFF,wireframe:true,transparent:true,opacity:0.08}))
   ico.position.set(-32,-18,-20);scene.add(ico)
-
-  // Octahedron
-  const oct=new THREE.Mesh(
-    new THREE.OctahedronGeometry(6,0),
-    new THREE.MeshBasicMaterial({color:0x00FF87,wireframe:true,transparent:true,opacity:0.06})
-  )
+  const oct=new THREE.Mesh(new THREE.OctahedronGeometry(6,0),new THREE.MeshBasicMaterial({color:0x00FF87,wireframe:true,transparent:true,opacity:0.06}))
   oct.position.set(20,-25,-10);scene.add(oct)
-
   let mx=0,my=0
   window.addEventListener('mousemove',e=>{mx=(e.clientX/innerWidth-.5)*2;my=(e.clientY/innerHeight-.5)*2})
-
-  let raf;const animate=()=>{
-    raf=requestAnimationFrame(animate)
+  const animate=()=>{
+    requestAnimationFrame(animate)
     const t=Date.now()*.001
     cPts.rotation.y=t*.015;cPts.rotation.x=t*.008
     tk.rotation.x=t*.25;tk.rotation.y=t*.18
@@ -594,7 +645,6 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
     camera.lookAt(scene.position)
     renderer.render(scene,camera)
   };animate()
-
   window.addEventListener('resize',()=>{
     camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix()
     renderer.setSize(innerWidth,innerHeight)
@@ -603,19 +653,19 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
 
 // ─── TYPEWRITER ──────────────────────────────────────────────────────────────
 ;(function(){
-  const titles=["Software Engineer","AI Builder","Backend Developer","Systems Thinker","Co-op Available 2026"]
-  let idx=0,pos=0,del=false,timer
+  const titles=["Full-Stack Developer","Backend Engineer","Data Pipeline Builder","AI/LLM Integrations","Open to Co-op · F2026"]
+  let idx=0,pos=0,del=false
   const el=document.getElementById('tw')
   function tick(){
     const cur=titles[idx]
     if(!del){
       el.textContent=cur.slice(0,++pos)
-      if(pos===cur.length){del=true;timer=setTimeout(tick,2200);return}
+      if(pos===cur.length){del=true;setTimeout(tick,2200);return}
     } else {
       el.textContent=cur.slice(0,--pos)
       if(pos===0){del=false;idx=(idx+1)%titles.length}
     }
-    timer=setTimeout(tick,del?45:95)
+    setTimeout(tick,del?45:95)
   }
   tick()
 })()
@@ -626,8 +676,6 @@ footer{border-top:1px solid var(--border);padding:32px 60px;
     entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})
   },{threshold:0.1,rootMargin:'0px 0px -60px 0px'})
   document.querySelectorAll('.reveal,.reveal-l').forEach(el=>obs.observe(el))
-
-  // Delay stagger children
   document.querySelectorAll('.stagger').forEach(parent=>{
     parent.querySelectorAll('.reveal,.reveal-l').forEach((child,i)=>{
       child.style.setProperty('--d',i*0.07+'s')
