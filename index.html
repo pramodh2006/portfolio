@@ -290,8 +290,8 @@ h1.hero-name{
 @keyframes ftag{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
 
 
-/* ─── SKILLS & STACK (ABOUT REMOVED) ─────────────────────────────────────── */
-#skills{padding:var(--sp-12) 0} /* Tighter padding */
+/* ─── SKILLS & STACK ─────────────────────────────────────────────────────── */
+#skills{padding:var(--sp-12) 0}
 
 /* Skills Categories Grid */
 .skills-cats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px; z-index: 20;}
@@ -370,7 +370,7 @@ h1.hero-name{
 /* Preview panel */
 .mission-preview{
   background:rgba(255,255,255,0.01);
-  border:1px solid rgba(255,255,255,0.05); /* max 5% wireframe */
+  border:1px solid rgba(255,255,255,0.05);
   padding:48px;
   position:sticky;top:96px;min-height:540px;
   transition:border-color 0.3s ease;
@@ -395,18 +395,18 @@ h1.hero-name{
 .psi-wrap{display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:40px}
 .psi-col{
   padding:24px 28px;background:rgba(255,255,255,0.015);
-  border:1px solid rgba(255,255,255,0.05); /* Reduced wireframe to 5% */
+  border:1px solid rgba(255,255,255,0.05);
   border-left-width:2px;
   border-left-color:rgba(255,255,255,0.08);
 }
 .psi-label{font-family:var(--font-m);font-size:10px;text-transform:uppercase;letter-spacing:0.15em;color:#E6F1F5;margin-bottom:16px;font-weight:700;}
-.psi-text{font-size:15px;line-height:1.9;color:#9FB3C8} /* Increased line-height */
+.psi-text{font-size:15px;line-height:1.9;color:#9FB3C8}
 
 /* Stat chips */
 .stat-row{display:flex;gap:16px;margin-bottom:32px;flex-wrap:wrap}
 .stat-chip{
   flex:1;min-width:80px;padding:20px 16px;
-  background:rgba(255,255,255,0.015);border:1px solid rgba(255,255,255,0.05); /* Reduced wireframe to 5% */
+  background:rgba(255,255,255,0.015);border:1px solid rgba(255,255,255,0.05);
   text-align:center; box-shadow:none !important;
 }
 .stat-val{font-family:var(--font-d);font-size:22px;font-weight:700;color:#E6F1F5;line-height:1;margin-bottom:10px;}
@@ -414,7 +414,7 @@ h1.hero-name{
 .preview-stack{display:flex;flex-wrap:wrap;gap:8px}
 .preview-stack .tag{
   font-family:var(--font-m);font-size:10px;text-transform:uppercase;
-  letter-spacing:0.1em;padding:8px 14px;border:1px solid rgba(255,255,255,0.08); /* Max 8% */
+  letter-spacing:0.1em;padding:8px 14px;border:1px solid rgba(255,255,255,0.08);
   color:#E6F1F5; background:rgba(255,255,255,0.02);
 }
 /* ─── EXPERIENCE (PREMIUM TIMELINE REFACTOR) ─────────────────────────────── */
@@ -427,7 +427,7 @@ h1.hero-name{
 }
 .exp-list::before{
   content:'';position:absolute;left:4px;top:28px;bottom:28px;width:1px;
-  background:rgba(255,255,255,0.05); /* 5% wireframe opacity */
+  background:rgba(255,255,255,0.05);
 }
 .exp-item{
   padding:16px 0;border-bottom:none;border-left:none;
@@ -559,7 +559,8 @@ footer{
           <span class="tl-wrap"><span class="tl-inner">Kumar <span class="hn-accent">V.</span></span></span>
         </h1>
         <div class="typewriter-row"><span id="tw"></span><span class="cursor">_</span></div>
-        <p class="hero-bio"><strong>Sexton Scholar</strong> · CS at Dalhousie. I build full-stack web apps, AI integrations, and data pipelines — and I care about shipping things that work, not just things that demo well. Available for Co-op Fall 2026.</p>
+        <!-- ─── UPDATED HERO BIO ─── -->
+        <p class="hero-bio"><strong>Sexton Scholar</strong> · CS at Dalhousie. I design and build <strong>distributed systems, event-driven architectures</strong>, and scalable full-stack applications — with a focus on correctness, throughput, and production reliability. Not just things that demo well, but systems that hold up under load. Available for Co-op Fall 2026.</p>
         <div class="hero-cta">
           <a href="#projects" class="btn-p" data-bracket>View My Work</a>
           <a href="#contact" class="btn-o" data-bracket>Get In Touch</a>
@@ -592,7 +593,7 @@ footer{
           </div>
           <div class="h-ftag h-ftag-1">Full-Stack · AI · Data</div>
           <div class="h-ftag h-ftag-2">Co-op · Fall 2026</div>
-          <div class="h-ftag h-ftag-3">3 Projects Live</div>
+          <div class="h-ftag h-ftag-3">4 Projects Live</div>
         </div>
       </div>
 
@@ -606,7 +607,7 @@ footer{
 
 <div class="section-divider" data-label="01 · SKILLS & EXPERTISE"></div>
 
-<!-- ─── SKILLS & STACK (ABOUT REMOVED, TIGHTER LAYOUT) ───────────────────── -->
+<!-- ─── SKILLS & STACK ───────────────────────────────────────────────────── -->
 <section id="skills">
   <div class="wrap">
     <div class="section-label">Capabilities</div>
@@ -629,16 +630,18 @@ footer{
           <span class="skill-tag">React.js</span><span class="skill-tag">Tailwind CSS</span><span class="skill-tag">Vue.js</span><span class="skill-tag">Framer Motion</span><span class="skill-tag">Vite</span>
         </div>
       </div>
+      <!-- ─── UPDATED: Backend & Data ─── -->
       <div class="skill-cat" data-bracket>
         <h4>Backend & Data</h4>
         <div class="skill-tags">
-          <span class="skill-tag">Flask</span><span class="skill-tag">REST APIs</span><span class="skill-tag">SQLite</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">ETL Pipelines</span>
+          <span class="skill-tag">FastAPI</span><span class="skill-tag">Flask</span><span class="skill-tag">REST APIs</span><span class="skill-tag">Redis</span><span class="skill-tag">SQLite</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">ETL Pipelines</span><span class="skill-tag">LocalStack</span>
         </div>
       </div>
+      <!-- ─── UPDATED: Cloud & DevOps ─── -->
       <div class="skill-cat" data-bracket>
         <h4>Cloud & DevOps</h4>
         <div class="skill-tags">
-          <span class="skill-tag">AWS EC2/S3</span><span class="skill-tag">Docker</span><span class="skill-tag">GitHub Actions</span><span class="skill-tag">Vercel</span><span class="skill-tag">Render</span>
+          <span class="skill-tag">AWS SQS</span><span class="skill-tag">AWS EC2/S3</span><span class="skill-tag">Docker</span><span class="skill-tag">Docker Compose</span><span class="skill-tag">GitHub Actions</span><span class="skill-tag">CI/CD</span><span class="skill-tag">Locust</span><span class="skill-tag">Vercel</span><span class="skill-tag">Render</span>
         </div>
       </div>
       <div class="skill-cat" data-bracket>
@@ -650,7 +653,7 @@ footer{
       <div class="skill-cat" data-bracket>
         <h4>Systems</h4>
         <div class="skill-tags">
-          <span class="skill-tag">System Design</span><span class="skill-tag">JWT Auth</span><span class="skill-tag">CI/CD</span><span class="skill-tag">Agile/Scrum</span>
+          <span class="skill-tag">Distributed Systems</span><span class="skill-tag">Event-Driven Arch.</span><span class="skill-tag">System Design</span><span class="skill-tag">JWT Auth</span><span class="skill-tag">Agile/Scrum</span>
         </div>
       </div>
     </div>
@@ -671,15 +674,15 @@ footer{
       </div>
       <div class="skill-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"><line x1="9" y1="2" x2="15" y2="2"/><line x1="12" y1="2" x2="12" y2="8"/><path d="M8 8L4 18a2.5 2.5 0 0 0 2.3 3.5h11.4A2.5 2.5 0 0 0 20 18L16 8H8z"/><line x1="6.5" y1="15" x2="17.5" y2="15"/><circle cx="9" cy="18" r="0.75" fill="currentColor" stroke="none"/><circle cx="13" cy="17.5" r="0.75" fill="currentColor" stroke="none"/></svg>
-        <label>Flask</label>
+        <label>FastAPI</label>
       </div>
       <div class="skill-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 14a4 4 0 1 1 .4-7.97A5.5 5.5 0 0 1 17.5 10a3 3 0 0 1-.5 5.96"/><path d="M9 17l-1.5 3M12 17v3M15 17l1.5 3"/><line x1="7" y1="20" x2="17" y2="20"/></svg>
-        <label>AWS</label>
+        <label>AWS SQS</label>
       </div>
       <div class="skill-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7" ry="2.5"/><path d="M5 5.5v5c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5V5.5"/><path d="M5 10.5v5c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-5"/><path d="M5 15.5v3c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-3"/></svg>
-        <label>SQLite</label>
+        <label>Redis</label>
       </div>
       <div class="skill-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"><path d="M17 9h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M3 9h13v5.5a3.5 3.5 0 0 1-3.5 3.5H6.5A3.5 3.5 0 0 1 3 14.5V9z"/><line x1="6" y1="3" x2="6" y2="5.5"/><line x1="10" y1="2" x2="10" y2="5.5"/><line x1="14" y1="3" x2="14" y2="5.5"/></svg>
@@ -691,11 +694,11 @@ footer{
       </div>
     </div>
 
-    <!-- Scrolling Ticker -->
+    <!-- ─── UPDATED: Scrolling Ticker ─── -->
     <div class="stack-ticker">
       <div class="ticker-inner">
-        <span class="ticker-pill">Python</span><span class="ticker-pill">React</span><span class="ticker-pill">Flask</span><span class="ticker-pill">AWS</span><span class="ticker-pill">SQLite</span><span class="ticker-pill">Docker</span><span class="ticker-pill">Java</span><span class="ticker-pill">TypeScript</span><span class="ticker-pill">PostgreSQL</span><span class="ticker-pill">Groq&nbsp;AI</span><span class="ticker-pill">OpenAI</span><span class="ticker-pill">GitHub&nbsp;Actions</span>
-        <span class="ticker-pill">Python</span><span class="ticker-pill">React</span><span class="ticker-pill">Flask</span><span class="ticker-pill">AWS</span><span class="ticker-pill">SQLite</span><span class="ticker-pill">Docker</span><span class="ticker-pill">Java</span><span class="ticker-pill">TypeScript</span><span class="ticker-pill">PostgreSQL</span><span class="ticker-pill">Groq&nbsp;AI</span><span class="ticker-pill">OpenAI</span><span class="ticker-pill">GitHub&nbsp;Actions</span>
+        <span class="ticker-pill">Python</span><span class="ticker-pill">FastAPI</span><span class="ticker-pill">AWS&nbsp;SQS</span><span class="ticker-pill">Redis</span><span class="ticker-pill">Docker&nbsp;Compose</span><span class="ticker-pill">CI/CD</span><span class="ticker-pill">React</span><span class="ticker-pill">Flask</span><span class="ticker-pill">AWS</span><span class="ticker-pill">SQLite</span><span class="ticker-pill">Docker</span><span class="ticker-pill">Java</span><span class="ticker-pill">TypeScript</span><span class="ticker-pill">PostgreSQL</span><span class="ticker-pill">Groq&nbsp;AI</span><span class="ticker-pill">OpenAI</span><span class="ticker-pill">GitHub&nbsp;Actions</span><span class="ticker-pill">LocalStack</span><span class="ticker-pill">Locust</span>
+        <span class="ticker-pill">Python</span><span class="ticker-pill">FastAPI</span><span class="ticker-pill">AWS&nbsp;SQS</span><span class="ticker-pill">Redis</span><span class="ticker-pill">Docker&nbsp;Compose</span><span class="ticker-pill">CI/CD</span><span class="ticker-pill">React</span><span class="ticker-pill">Flask</span><span class="ticker-pill">AWS</span><span class="ticker-pill">SQLite</span><span class="ticker-pill">Docker</span><span class="ticker-pill">Java</span><span class="ticker-pill">TypeScript</span><span class="ticker-pill">PostgreSQL</span><span class="ticker-pill">Groq&nbsp;AI</span><span class="ticker-pill">OpenAI</span><span class="ticker-pill">GitHub&nbsp;Actions</span><span class="ticker-pill">LocalStack</span><span class="ticker-pill">Locust</span>
       </div>
     </div>
 
@@ -715,6 +718,7 @@ footer{
       </h2>
     </div>
     <div class="mission-select">
+      <!-- ─── UPDATED: Mission List with new project at index 1 ─── -->
       <div class="mission-list" id="mission-list">
         <div class="mission-item active" data-index="0">
           <span class="mi-num">01</span>
@@ -724,24 +728,34 @@ footer{
           </div>
           <span class="mi-arrow">→</span>
         </div>
+        <!-- NEW PROJECT -->
         <div class="mission-item" data-index="1">
           <span class="mi-num">02</span>
+          <div class="mi-body">
+            <div class="mi-title">Distributed Order Engine</div>
+            <div class="mi-sub">Event-Driven Checkout Architecture</div>
+          </div>
+          <span class="mi-arrow">→</span>
+        </div>
+        <!-- SHIFTED DOWN -->
+        <div class="mission-item" data-index="2">
+          <span class="mi-num">03</span>
           <div class="mi-body">
             <div class="mi-title">IntelliToggle</div>
             <div class="mi-sub">Frontend Component Architecture</div>
           </div>
           <span class="mi-arrow">→</span>
         </div>
-        <div class="mission-item" data-index="2">
-          <span class="mi-num">03</span>
+        <div class="mission-item" data-index="3">
+          <span class="mi-num">04</span>
           <div class="mi-body">
             <div class="mi-title">AI Sustainability Analyzer</div>
             <div class="mi-sub">Python REST API · Hackathon</div>
           </div>
           <span class="mi-arrow">→</span>
         </div>
-        <div class="mission-item" data-index="3">
-          <span class="mi-num">04</span>
+        <div class="mission-item" data-index="4">
+          <span class="mi-num">05</span>
           <div class="mi-body">
             <div class="mi-title">Data Syndication Engine</div>
             <div class="mi-sub">Automated ETL Pipeline</div>
@@ -809,7 +823,8 @@ footer{
 
 <script>
 /* ══════════════════════════════════════════════════════════════════════════
-   PROJECT DATA (REWRITTEN PROFESSIONALLY)
+   PROJECT DATA — UPDATED WITH DISTRIBUTED ORDER ENGINE AT INDEX 1
+   AND RENUMBERED PROJECTS ("03", "04", "05")
 ══════════════════════════════════════════════════════════════════════════ */
 const PROJECTS = [
   {
@@ -824,7 +839,18 @@ const PROJECTS = [
     demo:'https://path-pilot-roan.vercel.app/'
   },
   {
-    num:'02', title:'IntelliToggle', sub:'Frontend Component Architecture',
+    num:'02', title:'Distributed Order Engine', sub:'Event-Driven Checkout Architecture',
+    color:'#FF9900',
+    context:'Synchronous e-commerce APIs frequently fail under traffic spikes due to downstream database locks and slow inventory validation, leading to lost sales.',
+    architecture:'Architected a decoupled producer/consumer system. FastAPI validates requests and publishes to AWS SQS. Horizontally scaled Python workers consume batches, execute atomic Redis inventory decrements, and persist to PostgreSQL.',
+    outcome:'Benchmarked via Locust load testing to successfully handle 500+ concurrent users with 0% data loss and sub-50ms API response latency. Completely eliminated database locking.',
+    stats:[{v:'500+',k:'Concurrent Users'},{v:'AWS',k:'SQS & LocalStack'},{v:'<50ms',k:'API Latency'}],
+    stack:['Python','FastAPI','AWS SQS','Redis','PostgreSQL','Docker','Locust'],
+    github:'https://github.com/pramodh2006/distributed-order-engine',
+    demo:null
+  },
+  {
+    num:'03', title:'IntelliToggle', sub:'Frontend Component Architecture',
     color:'#9B6FFF',
     context:'Required a robust, highly responsive component library translating complex Figma specifications into production-ready code.',
     architecture:'Developed a modular, type-safe architecture using Nuxt.js, Vue.js, and TypeScript. Implemented custom utility classes with Tailwind CSS without relying on external UI libraries.',
@@ -835,7 +861,7 @@ const PROJECTS = [
     demo:'https://intellitoggle-frontend1.vercel.app/'
   },
   {
-    num:'03', title:'AI Sustainability Analyzer', sub:'Python REST API · Hackathon',
+    num:'04', title:'AI Sustainability Analyzer', sub:'Python REST API · Hackathon',
     color:'#FFB800',
     context:'A cross-functional team required a reliable, AI-driven backend for environmental data validation and real-time sustainability scoring under a strict 24-hour deadline.',
     architecture:'Engineered a robust RESTful API using Python and Flask. Integrated OpenAI models for real-time data analysis and secured endpoints for seamless frontend integration.',
@@ -846,7 +872,7 @@ const PROJECTS = [
     demo:null
   },
   {
-    num:'04', title:'Data Syndication Engine', sub:'Automated ETL Pipeline',
+    num:'05', title:'Data Syndication Engine', sub:'Automated ETL Pipeline',
     color:'#00FF87',
     context:'Manual content aggregation from multiple external API sources created a significant data processing bottleneck, taking nearly 45 minutes per record.',
     architecture:'Designed and implemented a scalable ETL pipeline in Python. Automated data extraction from 5+ REST APIs, executing structured deduplication and storing clean data in PostgreSQL.',
@@ -1121,14 +1147,6 @@ gsap.utils.toArray('.section-label').forEach(el => {
   });
 });
 
-
-
-
-
-
-
-
-
 gsap.from('.exp-detail', {
   scrollTrigger: { trigger: '.exp-grid', start: 'top 80%', once: true },
   x: 30, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 0.2
@@ -1143,8 +1161,6 @@ gsap.from('.contact-title .tl-inner', {
   y: '108%', duration: 1.0, stagger: 0.1, ease: 'power4.out'
 });
 
-
-
 /* ══════════════════════════════════════════════════════════════════════════
    MISSION SELECT
 ══════════════════════════════════════════════════════════════════════════ */
@@ -1156,7 +1172,6 @@ function renderProjectHTML(p) {
     p.demo   ? `<a href="${p.demo}"   target="_blank">Live Demo ↗</a>` : ''
   ].filter(Boolean).join('');
 
-  // Replaced dynamic injected neon colors and shadows with fixed premium hexes.
   const statChips = p.stats.map(s => `
     <div class="stat-chip">
       <div class="stat-val">${s.v}</div>
@@ -1201,7 +1216,6 @@ function selectProject(index) {
     .to(panel, { opacity: 0, y: 12, duration: 0.22, ease: 'power2.in',
       onComplete: () => {
         panel.innerHTML = renderProjectHTML(PROJECTS[index]);
-        // Note: the bk brackets were removed in CSS for a premium look, but JS won't break 
         panel.querySelectorAll('[data-bracket]').forEach(el => {
           ['tl','tr','bl','br'].forEach(pos => {
             const b = document.createElement('span');
@@ -1264,7 +1278,7 @@ document.getElementById('exp-detail').innerHTML = renderExpHTML(EXP_DATA[0]);
    TYPEWRITER
 ══════════════════════════════════════════════════════════════════════════ */
 (function(){
-  const titles = ['Full-Stack Developer','Backend Engineer','Data Pipeline Builder','AI/LLM Integrations','Open to Co-op · F2026'];
+  const titles = ['Backend SWE Intern','Distributed Systems Builder','Full-Stack Developer','Data Pipeline Engineer','AI/LLM Integrations','Open to Co-op · F2026'];
   let idx = 0, pos = 0, del = false;
   const el = document.getElementById('tw');
   setTimeout(function tick() {
