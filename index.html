@@ -624,30 +624,30 @@ footer{
           <span class="skill-tag">Python</span><span class="skill-tag">TypeScript</span><span class="skill-tag">JavaScript</span><span class="skill-tag">Java</span><span class="skill-tag">SQL</span><span class="skill-tag">Ruby</span><span class="skill-tag">C</span>
         </div>
       </div>
+      <!-- ─── CHANGE 1a: Added "React Testing Library" and "Jest" to Frontend ─── -->
       <div class="skill-cat" data-bracket>
         <h4>Frontend</h4>
         <div class="skill-tags">
-          <span class="skill-tag">React.js</span><span class="skill-tag">Tailwind CSS</span><span class="skill-tag">Vue.js</span><span class="skill-tag">Framer Motion</span><span class="skill-tag">Vite</span>
+          <span class="skill-tag">React.js</span><span class="skill-tag">Tailwind CSS</span><span class="skill-tag">Vue.js</span><span class="skill-tag">Framer Motion</span><span class="skill-tag">Vite</span><span class="skill-tag">React Testing Library</span><span class="skill-tag">Jest</span>
         </div>
       </div>
-      <!-- ─── UPDATED: Backend & Data ─── -->
       <div class="skill-cat" data-bracket>
         <h4>Backend & Data</h4>
         <div class="skill-tags">
           <span class="skill-tag">FastAPI</span><span class="skill-tag">Flask</span><span class="skill-tag">REST APIs</span><span class="skill-tag">Redis</span><span class="skill-tag">SQLite</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">ETL Pipelines</span><span class="skill-tag">LocalStack</span>
         </div>
       </div>
-      <!-- ─── UPDATED: Cloud & DevOps ─── -->
       <div class="skill-cat" data-bracket>
         <h4>Cloud & DevOps</h4>
         <div class="skill-tags">
           <span class="skill-tag">AWS SQS</span><span class="skill-tag">AWS EC2/S3</span><span class="skill-tag">Docker</span><span class="skill-tag">Docker Compose</span><span class="skill-tag">GitHub Actions</span><span class="skill-tag">CI/CD</span><span class="skill-tag">Locust</span><span class="skill-tag">Vercel</span><span class="skill-tag">Render</span>
         </div>
       </div>
+      <!-- ─── CHANGE 1b: Added "PyTorch" and "OpenCV" to AI & ML ─── -->
       <div class="skill-cat" data-bracket>
         <h4>AI & ML</h4>
         <div class="skill-tags">
-          <span class="skill-tag">Groq API</span><span class="skill-tag">OpenAI API</span><span class="skill-tag">LLM Integration</span><span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span>
+          <span class="skill-tag">Groq API</span><span class="skill-tag">OpenAI API</span><span class="skill-tag">LLM Integration</span><span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span><span class="skill-tag">PyTorch</span><span class="skill-tag">OpenCV</span>
         </div>
       </div>
       <div class="skill-cat" data-bracket>
@@ -694,7 +694,7 @@ footer{
       </div>
     </div>
 
-    <!-- ─── UPDATED: Scrolling Ticker ─── -->
+    <!-- ─── Scrolling Ticker ─── -->
     <div class="stack-ticker">
       <div class="ticker-inner">
         <span class="ticker-pill">Python</span><span class="ticker-pill">FastAPI</span><span class="ticker-pill">AWS&nbsp;SQS</span><span class="ticker-pill">Redis</span><span class="ticker-pill">Docker&nbsp;Compose</span><span class="ticker-pill">CI/CD</span><span class="ticker-pill">React</span><span class="ticker-pill">Flask</span><span class="ticker-pill">AWS</span><span class="ticker-pill">SQLite</span><span class="ticker-pill">Docker</span><span class="ticker-pill">Java</span><span class="ticker-pill">TypeScript</span><span class="ticker-pill">PostgreSQL</span><span class="ticker-pill">Groq&nbsp;AI</span><span class="ticker-pill">OpenAI</span><span class="ticker-pill">GitHub&nbsp;Actions</span><span class="ticker-pill">LocalStack</span><span class="ticker-pill">Locust</span>
@@ -718,7 +718,6 @@ footer{
       </h2>
     </div>
     <div class="mission-select">
-      <!-- ─── UPDATED: Mission List with new project at index 1 ─── -->
       <div class="mission-list" id="mission-list">
         <div class="mission-item active" data-index="0">
           <span class="mi-num">01</span>
@@ -728,7 +727,6 @@ footer{
           </div>
           <span class="mi-arrow">→</span>
         </div>
-        <!-- NEW PROJECT -->
         <div class="mission-item" data-index="1">
           <span class="mi-num">02</span>
           <div class="mi-body">
@@ -737,7 +735,6 @@ footer{
           </div>
           <span class="mi-arrow">→</span>
         </div>
-        <!-- SHIFTED DOWN -->
         <div class="mission-item" data-index="2">
           <span class="mi-num">03</span>
           <div class="mi-body">
@@ -780,16 +777,23 @@ footer{
       <span class="tl-wrap"><span class="tl-inner">Where I've Worked.</span></span>
     </h2>
     <div class="exp-grid">
+
+      <!-- ─── CHANGE 2: Updated exp-list — Freelance at top (index 0), others shifted ─── -->
       <div class="exp-list">
         <div class="exp-item active" data-exp="0">
-          <div class="co">Dalhousie University</div>
-          <div class="yr">Oct – Dec 2025</div>
+          <div class="co">Freelance</div>
+          <div class="yr">Jan 2026 — Present</div>
         </div>
         <div class="exp-item" data-exp="1">
+          <div class="co">Dalhousie University</div>
+          <div class="yr">Oct — Dec 2025</div>
+        </div>
+        <div class="exp-item" data-exp="2">
           <div class="co">Unified Mentor</div>
-          <div class="yr">Nov – Dec 2024</div>
+          <div class="yr">Nov — Dec 2024</div>
         </div>
       </div>
+
       <div class="exp-detail" id="exp-detail" data-bracket>
         <!-- Populated by JS -->
       </div>
@@ -823,8 +827,7 @@ footer{
 
 <script>
 /* ══════════════════════════════════════════════════════════════════════════
-   PROJECT DATA — UPDATED WITH DISTRIBUTED ORDER ENGINE AT INDEX 1
-   AND RENUMBERED PROJECTS ("03", "04", "05")
+   PROJECT DATA
 ══════════════════════════════════════════════════════════════════════════ */
 const PROJECTS = [
   {
@@ -884,7 +887,18 @@ const PROJECTS = [
   }
 ];
 
+/* ══════════════════════════════════════════════════════════════════════════
+   CHANGE 3: EXP_DATA — Freelance inserted at index 0, others shifted to 1 & 2
+══════════════════════════════════════════════════════════════════════════ */
 const EXP_DATA = [
+  {
+    role: 'Freelance Software Developer<br><small style="font-weight:400;font-size:14px;color:var(--muted2);">Self-Employed</small>',
+    meta: 'Remote | Jan 2026 – Present',
+    bullets: [
+      'Engineered IntelliToggle, a client-facing frontend interface built in React and TypeScript, translating rough requirements into a responsive UI within a rapid 6-hour development window.',
+      'Managed the end-to-end delivery of client projects, handling API integration, mobile-responsive layout design, and strict UI debugging to ensure robust usability.'
+    ]
+  },
   {
     role:'Research Assistant<br><small style="font-weight:400;font-size:14px;color:var(--muted2)">Software Development</small>',
     meta:'Dalhousie University · Halifax, NS · Oct – Dec 2025',
